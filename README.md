@@ -1,4 +1,3 @@
- ll16jj/GEOG5990M_Portfolio# GEOG5990M_Portfolio
  GEOG 5990M Programming Assessment 1 Portfolio
  
  This project is about the generation of a finalised Agent-Based Model. 
