@@ -1,0 +1,247 @@
+ html { 
+	height: 100%;
+	width: 100%;
+}
+ 
+ 
+/*Style the whole body, keeping text aligned in the centre and Arial font, unless stated otherwise in other styling*/
+body { 
+	margin: 0;
+    text-align: center;
+	font-family: Arial;
+}
+
+/*Styles the interactive map to centre the map in place*/
+.gmap {
+    margin: 0px;
+    border: medium solid black; 
+	position: center;
+	margin-left: auto;
+	margin-right: auto;
+    padding: 500px 20px;	
+}
+
+/* Styles the infowindow for all markers on the map*/ 
+.infowindow {
+   text-align:left;
+   font-size: 15px;
+   padding: 0px 10px 0px 0px;
+}
+
+.infowindow ul {
+	list-style: none;
+    display: flex;
+	justify-content: space-evenly;
+	padding-right: 30px;
+}
+
+.infowindow h1 {
+	font-size: 35px;
+}
+
+/* Style the buttons and reset buttons. Style when the button is hovered over, as well as when it's in focus, to let the reader know which button they pressed */
+.button {
+  background-color: #cc0000;
+  border-color: #555555;
+  color: white;
+  padding: 9px;
+  border-radius: 10px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 14px;
+  margin: 3px;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: #D6E0FF;
+  color: white;
+  font-weight: bold;
+}
+
+.button:focus {
+	background-color: black;
+	font-weight:bold;
+}
+
+.reset {
+  background-color: #053361;
+  border-color: #555555;
+  color: white;
+  padding: 10px;
+  border-radius: 12px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  margin: 3px;
+  cursor: pointer;
+}
+
+.reset:hover {
+  background-color: #D6E0FF;
+  color: white;
+  font-weight: bold;
+}
+
+/*Style all buttons to display horizontally*/
+.buttons {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;	
+}
+
+/* Styling for the header, with a separate style for the text h1*/
+.header {
+  text-align: center;
+  background-color: none;
+  background-image: url('House_Increase.jpg');
+  background-position: center;	
+  background-repeat: no-repeat;	
+  padding: 30px; 
+  opacity: 0.7;
+}
+
+.Title h1{
+  font-size: 60px;
+  text-align: center;
+  color:black;
+}
+
+
+/* Sets the navigation bar style. Following styling includes when the button is active and when it is hovered over by the mouse */
+.nav {
+  overflow: hidden;
+  background-color: #555555;
+}
+
+.nav a {
+  text-decoration: none;
+  float: left;
+  color: white;
+  text-align: center;
+  padding: 10px 20px;
+}
+
+.nav a:hover {
+  background-color: #D6E0FF;
+  color: black;
+  font-weight: bold;
+}
+
+.nav a.active {
+  background-color: #292727;
+  color: white;
+  font-weight: bold;
+}
+/*Styling all the body text differently with font, weight, style, size etc... The title of each page is denoted h1 and then a line can be drawn underneath the title for every page*/
+.text h1 {
+	font-size: 50px;
+}
+
+.text h1::after{
+  content:'';
+  height:5px;
+  width:10%;
+  background: #262626;
+  position:absolute;
+  left:calc(100% - 55%);
+  bottom: 55%;
+}
+
+.text h2 {
+	font-size: 25px;
+	padding: 1% 15%;
+	line-height: 200%;
+	font-weight: normal;
+}
+
+.text h2 ul {
+	font-size:20px;
+	text-align: left;
+}
+
+.text h3 {
+	font-weight: normal;
+	font-style: italic;
+	padding: 0% 15%;
+}
+
+/*Styles the contact us form on contact.html*/
+input[type=Text], select, textarea {
+  width: 100%;
+  padding: 20px; 
+  border: 2px solid #cccccc;
+  border-radius: 4px;	
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=Submit] {
+  background-color: #CC1B1B;
+  color: white;
+  font-weight: bold;												
+  padding: 12px 20px;
+  border-color: grey;		
+  cursor: pointer;	
+}
+
+input[type=Submit]:hover {
+  background-color: #585858;
+}
+
+.container {
+  border-radius: 10px;
+  background-color: #f2f2f2;
+  padding: 20px;
+  margin:0% 15%;
+}
+
+/*Styles the footer at the bottom of every page with an about us summary and contactlinks, which are the telephone number, email and location of office*/
+.Footer{
+	width: 100%;
+	overflow: hidden;
+    background-color: #666666;
+}
+	
+.About{
+   float: center;
+}
+.About h1{
+	font-size: 30px;
+	color: black;
+}
+
+.About h2{
+	font-size: 20px;
+	color:black;
+	text-decoration: underline;
+}
+
+.About p{
+	margin: 0% 30%;
+	text-align:center;
+	position:sticky;
+	padding-bottom: 2%;
+}
+
+/* Styles the most-bottom footer where the copy sign is located with my information - Univeristy of Leeds, Student number and name*/
+.End{
+	background-color:#555555;	
+	overflow: hidden;
+	font-size:7px;
+	font-style:italic;
+}
+
+.ContactLinks{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+img {
+	border: 2px solid #555555;
+}

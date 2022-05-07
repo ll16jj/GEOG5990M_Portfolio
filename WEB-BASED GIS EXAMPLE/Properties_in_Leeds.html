@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<head>
+    <script type="text/javascript" src="http://maps.google.com/maps/api/js"></script>
+	<!--Link to the css file that is used to style all the html pages and variables/classes-->
+	<link rel="stylesheet" media="all" href="PIL.css" type="text/css">
+	<!--This script changes all the easting and northing values in the DATA_PIL.js file to latitude and longtitude, allowing the markers to be placed on the googlemap-->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">  
+	<title>Properties in Leeds</title>
+</head>
+
+
+<body>	
+<div class="header">
+    <div class="Title">
+	<h1>Properties in Leeds</h1>
+</div></div>
+
+<!--Adds a navigation bar, in which the webpage/button is set as "active"-->
+<div class="nav">
+  <a class="active" href="Properties_in_Leeds.html"><i class="fa fa-fw fa-home"></i> Home</a>
+  <a href="Property_Map.html"><i class="fa fa-map-marker"></i> Interactive Map</a>
+  <a href="Property_Change.html"><i class="fa fa-line-chart"></i> Property Price Over Time</a>
+  <a href="Demographics.html"><i class="fa fa-pie-chart"></i> Demographics</a>
+  <a href="References.html"><i class="fa fa-fw fa-database"></i> Data Sources and References</a>
+  <a href="Contact.html"><i class="fa fa-fw fa-envelope"></i> Contact us</a>
+</div>
+
+<div class="text"> <br><br><br><br>
+	<h1> Leeds Housing Market </h1><br>
+
+	<h2> Residential property prices have been increasingly rapidly throughout the UK mainly due to Coronavirus however, property prices have been steadily increasing for decades. The last recorded
+	house price in the UK was £274,000, recorded in January 2022, which was £24,000 higher than the previous year (ONS, 2022b). </h2><br>
+	
+	<img src="houseprice.jpg", id="houseprice", style="height: 40%; width: 40%">
+	<h3> Graph showing the average house price over time for England, Wales, Scotland and Northern Ireland (ONS, 2022a).</h3><br>
+	
+	<h2>In Leeds, the mean property price that sold over the past 12 months was recorded at £256,904, which is only slightly lower than the UK average. The mean price for a detached house is significantly
+	higher therefore, the avergae house price matches most closely with Semi-Detached houses. </h2><br>
+	
+	<img src="Properties.jpg", id="Properties", style="height: 60%; width: 60%">
+	<h3> Bar chart showing the average price paid for different property types across Leeds (Zoopla, 2022). </h3><br>
+	
+	<h2>For first-time buyers, the property market can be difficult. To acquire a loans for a mortgage, your loan-to-income ratio is examined (Tilley, 2022). This is how much you earn compared to the
+	mortgage loan. The current maximum amount (there are variations/exemptions to this) of loan is approximately 4x times the annual income (Tilley, 2022). This becomes extremely problamatic because, 
+	the average property price in Leeds is £256,904, meaning an annual income of £50,000 is needed to acquire the loan without any deposit/savings. For many individuals and families, the annual income in Leeds 
+	and the UK is almost half this amount. Therefore, significant amount of savings are needed to afford buying a house and with rising house prices, this is creating extreme strain on people entering the housing
+	market (i.e. first-time buyers) and reducing the overall affordability of residential properties.</h2><br>
+	
+	<img src="afford.jpg", id="afford", style="height: 40%; width: 40%">
+	<h3> Graph showing the median house affordability ratio for different regions throughout England and Wales. The highlighted point indicates Leeds, with a ratio of 7.08, meaning 
+    the average house price in Leeds were 7.08 times greater than the average earnings (ONS, 2022c). </h3><br>
+	
+<br><br>
+</div>
+
+<!--Adds footer at the end of every html webpage, where general about us is included, and contactlinks, which are telephone, email and location data. For this project these have been made up-->
+<div class="Footer">
+    <div class="About">
+	<h1>Properties in Leeds</h1>
+	<h2>About:</h2>
+	<p>This website is a resource for those who are interested in buying/investing a property in Leeds, UK. The data collected via the interactive map were sourced via Zoopla
+	thus, more information on individual properties can be located via <a href="https://www.zoopla.co.uk/for-sale/property/west-yorkshire/leeds/">Zoopla's website.</a></p></div>
+	
+	<ul class="ContactLinks">
+	<li><span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-phone fa-stack-1x fa-inverse"></i></span></li>01234 567890  
+	<li><span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-envelope fa-stack-1x fa-inverse"></i></span></li>JohnSmith@googlemail.com  
+    <li><span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-map-marker fa-stack-1x fa-inverse"></i></span></li>123 Main Street, Leeds, West Yorkshire, UK 	 
+    </ul></div>
+	
+	<div class="End">
+	<h1> &copy; Jordan Johnson, SI: 201045221, University of Leeds, 2022</h1>
+	</div>
+	
+</body>
+</html>

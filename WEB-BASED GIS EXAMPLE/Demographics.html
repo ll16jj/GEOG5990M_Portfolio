@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<head>
+<head>
+    <script type="text/javascript" src="http://maps.google.com/maps/api/js"></script>
+	<!--Link to the css file that is used to style all the html pages and variables/classes-->
+	<link rel="stylesheet" media="all" href="PIL.css" type="text/css">
+	<!--This script changes all the easting and northing values in the DATA_PIL.js file to latitude and longtitude, allowing the markers to be placed on the googlemap-->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">  
+	<title>Properties in Leeds</title>
+</head>
+
+
+<body>	
+<div class="header">
+    <div class="Title">
+	<h1>Properties in Leeds</h1>
+</div></div>
+
+<!--Adds a navigation bar, in which the webpage/button is set as "active"-->
+<div class="nav">
+  <a href="Properties_in_Leeds.html"><i class="fa fa-fw fa-home"></i> Home</a>
+  <a href="Property_Map.html"><i class="fa fa-map-marker"></i> Interactive Map</a>
+  <a href="Property_Change.html"><i class="fa fa-line-chart"></i> Property Price Over Time</a>
+  <a class="active" href="Demographics.html"><i class="fa fa-pie-chart"></i> Demographics</a>
+   <a href="References.html"><i class="fa fa-fw fa-database"></i> Data Sources and References</a>
+  <a href="Contact.html"><i class="fa fa-fw fa-envelope"></i> Contact us</a>
+</div>
+
+<div class="text"> <br><br><br><br>
+	<h1> Leeds Demographics: Where Is Best To Live?</h1><br>
+
+	<h2> When deciding where to live there are several demographic factors that we can think about to aid the decision-making process. For instance, we can look at the burglary rates and crime data
+    to decide which areas of Leeds have the highest level of crime and burglary and avoid those potentially voltile areas. Below is a map showing burglary rates per 1000 people however, this data
+    was collated from datasets from 2011 to 2014. There is clear trend that the areas of highest burglary rates are the OA's directly above of the City Centre: Hyde Park and Woodhouse; Chapel Allerton; 
+	Gipton and Harehills, and Headingley. This provides a pattern/trend of burglary across Leeds, which will most likely closely follow the pattern of burglary rates seen today.</h2><br>
+	
+	<img src="BURG.jpg", id="BURG", style="height: 70%; width: 70%">
+	<h3> Map showing burglary rates per 1000 people per LSOA throughout Leeds (Data collated from 2011-2014 and aggregated with 2011 Census OA's). </h3><br>
+	
+	<h2> Another factor for choosing where to live is the location of schools. This factor is particulary important for families with young children as each school will have their own catchment areas
+	for each education level (primary, secondary etc...). Therefore, this factor can be especially influential. Additional analysis could be performed on this to show the distance of each LSOA to its nearest 
+	school per education level.</h2><br>
+	
+	<img src="School.jpg", id="School", style="height: 70%; width: 70%">
+	<h3> Map showing school point data per education level throughout Leeds (Data collated through Leeds City Council).</h3><br>
+	
+	
+	<h2> Additional factors that can be considered are general geodemographic classifications. For instance, areas where there are young populations, mainly full-time students might aid individuals to 
+	invest in a property at that location or dissuade them from that area. Below is a geodemographic classification map created through 2011 Census variables, where areas are classified into clusters based on
+	demographic characteristics. For instance, the cluster centre Challenged Social Renters below might indicate a poorer area. Furthermore, when cross-examined with the burglary rates above, there is a possible
+	correlate between burglary rates and cluster centres 2 and 3 (Young Educated and Challenged Social Renters), inferring that areas with young populations who are students, as well as areas of high rates of low
+	socio-economic occupations and social renters, have some correlation with higher rates of crime. Thus, if an individual is investing/buying a residential property in these locations, increased security might be 
+	considered. Additional demographics that could be influential could be ethnicity, where areas with
+	extremely lower diversity could deter those from ethnic minorities. Other factors to consider could be public transport links, pollution rates and green spaces/parks.</h2><br>
+	
+	<img src="clusterMap2.jpg", id="clusterMap2", style="height: 70%; width: 70%">
+	<h3> Map showing cluster centres and pen portraits based on a geodemographic classification upon several variables sourced via the 2011 Census.</h3><br>
+	
+<br><br>
+</div>
+<!--Adds footer at the end of every html webpage, where general about us is included, and contactlinks, which are telephone, email and location data. For this project these have been made up-->
+<div class="Footer">
+    <div class="About">
+	<h1>Properties in Leeds</h1>
+	<h2>About:</h2>
+	<p>This website is a resource for those who are interested in buying/investing a property in Leeds, UK. The data collected via the interactive map were sourced via Zoopla
+	thus, more information on individual properties can be located via <a href="https://www.zoopla.co.uk/for-sale/property/west-yorkshire/leeds/">Zoopla's website.</a></p></div>
+	
+	<ul class="ContactLinks">
+	<li><span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-phone fa-stack-1x fa-inverse"></i></span></li>01234 567890  
+	<li><span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-envelope fa-stack-1x fa-inverse"></i></span></li>JohnSmith@googlemail.com  
+    <li><span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-map-marker fa-stack-1x fa-inverse"></i></span></li>123 Main Street, Leeds, West Yorkshire, UK 	 
+    </ul></div>
+	
+	<div class="End">
+	<h1> &copy; Jordan Johnson, SI: 201045221, University of Leeds, 2022</h1>
+	</div>
+	
+</body>
+</html>
