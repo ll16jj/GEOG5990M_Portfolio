@@ -1,0 +1,183 @@
+ html { 
+	height: 100%;
+	width: 100%;
+}
+ 
+ 
+/*Style the whole body, keeping text aligned in the centre and Arial font, unless stated otherwise in other styling*/
+body { 
+	margin: 0;
+    text-align: center;
+	font-family: Arial;
+}
+
+.header {
+  padding: 30px;
+  text-align: center;
+  background: #905997;
+  color: white;
+  font-size: 28px;
+}
+/*Linkedin ID allows for this to be styled, where its float is to the far right and height and width is manually determined*/
+#Linkedin {
+	float: right;
+	height: 4%;
+	width: 4%;
+}
+
+/*Margins allow for image to be moved to exact location I want them*/
+.image {
+	float:left;
+	position: relative;
+	width: 35%;
+	margin-left: 10%;
+	margin-bottom:3%;
+	padding-top: 40px;
+	padding-bottom:40px;
+
+}
+/*Style the initial images before hovering*/
+.A1 {
+  opacity: 1;
+  transition: 0.2s ease;
+  border: solid black;
+}
+
+.A2 {
+  opacity: 1;
+  transition: 0.2s ease;
+  border: solid black;
+}
+
+.A3 {
+  opacity: 1;
+  transition: 0.2s ease;
+  border: solid black;
+}
+
+.A4 {
+  opacity: 1;
+  transition: 0.2s ease;
+  border: solid black;
+}
+
+/*Styling the inside the image when it transitions when hovered*/
+.content {
+  transition: 0.2s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+/*Set opacity low, so content can be easily seen when image is hovered over*/
+.image:hover .A1 {
+  opacity: 0.2;
+}
+
+.image:hover .A2 {
+  opacity: 0.2;
+}
+
+.image:hover .A3 {
+  opacity: 0.2;
+}
+
+.image:hover .A4 {
+  opacity: 0.2;
+}
+
+.image:hover .content{
+  opacity: 1;
+}
+
+.content_text {
+  color: black;
+  font-size: 20px;
+  font-weight:bold;
+
+}
+
+
+/* Sets the navigation bar style. Following styling includes when the button is active and when it is hovered over by the mouse */
+.nav {
+  overflow: hidden;
+  background-color: #555555;
+  font-size:18	px;
+}
+
+.nav a {
+  text-decoration: none;
+  float: left;
+  color: white;
+  text-align: center;
+  padding: 10px 20px;
+}
+
+.nav a:hover {
+  background-color: #D6E0FF;
+  color: black;
+  font-weight: bold;
+}
+
+.nav a.active {
+  background-color: #292727;
+  color: white;
+  font-weight: bold;
+}
+/*Styling all the body text differently with font, weight, style, size etc... The title of each page is denoted h1 and then a line can be drawn underneath the title for every page*/
+.text h1 {
+	font-size: 50px;
+}
+
+.text h1::after{
+  content:'';
+  height:5px;
+  width:10%;
+  background: #262626;
+  position:absolute;
+  left:calc(100% - 55%);
+  bottom: 63%;
+}
+
+.text h2 {
+	font-size: 25px;
+	padding: 1% 15%;
+	line-height: 200%;
+	font-weight: normal;
+}
+
+.text h2 ul {
+	font-size:20px;
+	text-align: left;
+}
+
+.text h3 {
+	font-weight: normal;
+	font-style: italic;
+	padding: 0% 15%;
+}
+
+
+/*Styles the footer at the bottom of every page with an about us summary and contactlinks, which are the telephone number, email and location of office*/
+.Footer{
+	width: 100%;
+	overflow: hidden;
+    background-color: #666666;
+}
+
+/* Styles the most-bottom footer where the copy sign is located with my information - Univeristy of Leeds, Student number and name*/
+
+.ContactLinks{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+img {
+	border: 2px solid #555555;
+}
