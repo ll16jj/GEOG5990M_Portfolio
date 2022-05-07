@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<head> <!--Loads all the script links-->
+    <SCRIPT language="JavaScript" type="text/JavaScript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></SCRIPT>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous"> 
+	<link href="ABM.css" rel="stylesheet">
+	<title>ABM</title>
+</head>
+<body> <div class = "header">
+				<div class="Title">
+					<h1> ABM </h1>
+				</div>
+				<div class = "nav"> <!--Navigation bar, where the class=active, allows for the viewer to see which tab on the page they are on-->
+					<a href="ABM.html" >Home</a> 
+                    <a class="active"  href="code.html">Code</a>
+                    <a href="Links.html">Links</a></div>
+		</div></div>
+		<div class="content-area"> <!--All the text/content about Hurricane Sandy with images and references at the end-->
+				<div class="text">
+				<br><br><h1>Code: Agent-Based Model</h1><br><br><br><br>
+				<h2>The ABM (Agent-Based Model) produced is a simple system, where there are 50 agents in an environment read through a csv file, with width and height values of 300x300 cells. Using Matplotlib pyplot animations, these agents move around the 
+environment, eating the environment up, at a set number of iterations, which for this purpose is set to 100. The amount of agents; the number of iterations and what the agents do can all be changed through the code. 
+The agents move randomly and as the move, they eat the environment and store them. They can share the resources gained with other agents that are nearby through the share_with_neighbours function. The data is then output to
+a scattergraph as shown below.</h2><br><br>
+
+<img src="IMAGES/ABM_Plot.jpeg" id="ABM_Plot" style = 'height: 70%; width: 70%; border: solid black';>
+			<h3> Figure of the finalised Agent-Based Model, where 50 agents across the environment have moved a total of 100 iterations and eaten the environment and stored along the way. </h3><br>
+
+<h2>As stated in the Home section, there are three components that build this ABM, the Model, the Agent and the Environment. The Agentframework acts as our Agent section of the ABM. This script starts by importing the random module.
+Several variables can then be defined using _init_ methods such as, agents, environment, store, x and y values (As well as stating the set, get and del properties for x and y). The other defined variables include, eat, move, and share 
+with neighbours functions. </h2><br>
+
+<img src="IMAGES/af.jpg" id="af" style = 'height: 70%; width: 70%; border: solid black';>
+			<h3> Code snippet of the finalised Agent-Based Model. The figure shows part of the agentframework.py code, where variables are defined by a _init_ method in an agent class.</h3><br>
+
+<h2>The Model script starts off importing several modules and states the starting parameters, i.e number of iterations, number of agents, store value of the agents etc... Data is then gathered from the web through a url link using soups
+in which, the data is random x,y,z values. The environment is then loaded in via the csv reader from a text file containing the environment data. The x and y values are then initialised, with the starting values of x and y
+multiplied by 3 due to the web data being in the range of 0-100, when the width and height limits of the environment is 300x300 cells. The agents are then animated thus, they move and eat the environment through 100 iterations
+and this is plotted using matplotlib.pyplot function onto a scatter-graph. When the model is exited, the animation is halted, and the total amount of data stored is appended to csv and text documents. </h2><br>
+
+            <img src="IMAGES/model.jpg" id="model" style = 'height: 70%; width: 70%; border: solid black';>
+			<img src="IMAGES/env.jpg" id="env" style = 'height: 70%; width: 70%; border: solid black';>
+			<h3> Code snippet of the finalised Agent-Based Model. The top figure shows an example of the model.py code, initialising the agents. The bottom figure shows the environment inside the model.py code denoted by the red box. </h3><br>
+
+<h2>This model acts as a foundation Agent-Based Model thus, the model can be adapted to show population dynamics. For instance, there are two other agent subclasses,
+the predator and the prey. The agent is able to eat and move in this simple model, but for a predator-prey application, each agent could reproduce, age, sleep and die, so where these functions are added, an applicable 
+population model can be produced. An example of this predator-prey ABM is below. Click on Links in the navigation bar for the links to the model, as well as summarisation of the code structure.	</h2><br>
+				
+			<img src="IMAGES/SW1.jpg" id="SW1" style = 'height: 60%; width: 60%; border: solid black';>
+			<img src="IMAGES/SW103.jpg" id="SW103" style = 'height: 60%; width: 60%; border: solid black';>
+			<h3> Examples of predator-prey ABM using Wolves and Sheep. The top figure indicates the starting iteration, and the bottom is the finishing iteration, where the majority of the sheepp have been eaten by the wolves (Peach, 2018). </h3>
+			
+			
+			 
+	    </div></div><br><br>
+		<div class="references">
+        <h4><u> References: </u></h4>
+		<ul>
+		<li>Peach, B., 2018. <em>The Wolf and Sheep – Agent Based Model.</em> [Online]. [Accessed 28 April 2022]. Available from: <a href="http://brianpeach.com/portfolio/python/the-wolf-and-sheep-agent-based-model/"> http://brianpeach.com/portfolio/python/the-wolf-and-sheep-agent-based-model/ </a></li></ul>
+	<br><br></div>
+	<div class="Footer">
+    
+	<ul class="ContactLinks">
+	<li><span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-phone fa-stack-1x fa-inverse"></i></span></li><h3>01234 567890  </h3>
+	<li><span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-envelope fa-stack-1x fa-inverse"></i></span></li><h3>JohnSmith@googlemail.com   </h3>
+	<li><span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-map-marker fa-stack-1x fa-inverse"></i></span></li><h3>123 Main Street, Leeds, West Yorkshire, UK </h3>
+    </ul>
+	<h4> &copy; Jordan Johnson, SI: 201045221, University of Leeds, 2022</h1>
+	</div>
+		</h5><br><br><br>
+		</div>
+	</div>
+
+</body>
+</html>

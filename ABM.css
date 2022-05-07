@@ -1,0 +1,118 @@
+ html { 
+	height: 100%;
+	width: 100%;
+}
+
+
+body { 
+	margin: 0;
+    text-align: center;
+	font-family: Arial;
+}
+
+/* Title and navigation bar styled so they are both in the header */
+.header {
+	background-color: #262626;
+	position: fixed;
+	width: 100%;
+}
+
+.Title {
+	float: left;
+	padding-left: 20px;
+	line-height: 50px;
+	color: White;
+	font-size: 20px;
+	font-family: Arial;
+	letter-spacing:5px;
+	text-decoration: none;
+}
+.nav {
+	float: right;
+	line-height: 100px;
+}
+.nav a {
+	text-decoration: none;
+	font-family: Arial;
+	letter-spacing: 4px;
+	font-size: 20px;
+	margin: 0 10px;
+	color: white;
+}
+
+.nav a.active{
+	color:#999999;
+	font-weight: bold;
+}
+/* Navigation bar shows which tab is being hovered over and the active function allows the viewer to see which tab they are currently on */
+.nav a:hover {
+  background-color: #ADBFF7;
+  color: black;
+  font-weight: bold;
+}
+
+
+/* The text is styled differently and use of margin allows for me to place text where I want it on the screen */
+.text {
+	color:black;
+	font-weight: normal;
+	font-family: Arial;
+	text-align: center;
+	width: 70%; 
+	margin-left: auto;
+	margin-right: auto;
+	line-height:30px;
+}
+
+.text h1 {
+	font-size:50px;
+	padding-top:80px;
+}
+/* TThis creates a line underneath the title, but not the full horizontal distance the title incorporates. This line can be moved anywhere */
+.text h1::after{
+  content:'';
+  height:5px;
+  width:10%;
+  background: #262626;
+  position:absolute;
+  left:calc(100% - 55%);
+  bottom: 75%;
+}
+.text h2 {
+	font-size:25px;
+	width:100%;
+	line-height: 200%;
+	font-weight: normal;
+}
+
+.text h3 {
+	font-weight: normal;
+	font-style: italic;
+}
+
+/*Styles the footer at the bottom of every page with an about us summary and contactlinks, which are the telephone number, email and location of office*/
+.Footer{
+	width: 100%;
+	position:absolute;
+	overflow: hidden;
+    background-color: #262626;
+}
+
+.references ul{
+	text-align: left;
+}
+.ContactLinks h3{
+	color: white;
+}
+.Footer h4{
+	color: white;
+}
+
+/* Styles the most-bottom footer where the copy sign is located with my information - Univeristy of Leeds, Student number and name*/
+
+.ContactLinks{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
